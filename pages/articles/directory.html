@@ -1,0 +1,38 @@
+<div class="content" ng-controller="NinjaController">
+  <h1 style="text-align: center">Ninja List</h1>
+  <!-- <p>{{message}}</p> -->
+
+  <button ng-click="order = 'name'">Order by Name</button>
+  <button ng-click="order = 'belt'">Order by Belt</button>
+
+  <input type="text" ng-model="search" placeholder="search for a ninja" />
+
+  <!-- variables used- order, search -->
+  <ul id="ninja-list">
+    <li
+      ng-repeat="item in ninjas | orderBy: order | filter: search"
+      ng-show="item.available"
+    >
+      <h3>{{item.name}} - {{item.rate | currency: '$'}}</h3>
+      <!-- Use ng-src instead of the src attribute because the src attribute laods before angular is injected -->
+      <img
+        ng-src="{{item.imageSource}}"
+        style="margin: -12px 10px 0 0; float: left; width: 50px; border-radius: 50px;"
+        ng-show="item.imageSource"
+      />
+      <div class="remove" ng-click="removeItem(item)">x</div>
+      <span class="belt" style="background: {{item.belt}}"
+        >{{item.belt}} belt</span
+      >
+    </li>
+  </ul>
+
+  <form ng-submit="addNinja()">
+    <input type="text" placeholder="name" ng-model="newNinja.name" />
+    <input type="text" placeholder="belt" ng-model="newNinja.belt" />
+    <input type="text" placeholder="rate" ng-model="newNinja.rate" />
+    <input type="submit" value="Add new ninja" />
+  </form>
+
+  <a href="" ng-click="removeAll()">Remove all ninjas</a>
+</div>
