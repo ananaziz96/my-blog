@@ -1,4 +1,4 @@
-.green {
+.green-3 {
   color: #2b7a78;
 }
 
@@ -18,18 +18,18 @@
   color: #2b7a78;
 }
 
-p {
+.article p {
   font-size: 1.25rem;
   line-height: 1.6;
 }
 
-.code-block {
+.article .code-block {
   background-color: #def2f1;
   font-family: Menlo, Monaco, "Courier New", Courier, monospace;
   padding: 20px;
 }
 
-img {
+.article img {
   width: 100%;
   height: auto;
 }
@@ -44,22 +44,45 @@ img {
 
 .icon-button {
   background-color: #ffff;
-  padding: 0;
   border: none;
   margin: 10px;
 }
 
-#footer {
+.footer {
   background-color: #3aafa9;
+  margin-top: 50px;
   margin-bottom: 0;
 }
 
-#banner {
+.banner {
   background-color: #3aafa9;
 }
 
-#banner h1,
-#banner p {
+.banner h1,
+.banner p {
   color: #ffff;
+}
+
+.blog-card img {
+  width: 80%;
+  height: auto;
+}
+
+.blog-card p {
+  font-size: 1em;
+}
+
+.blog-card .read-more {
+  padding: 0;
+}
+
+.trending-now tr {
+  border-bottom: 1px solid #2b7a78;
+}
+
+.trending-now .number {
+  font-weight: 800;
+  font-size: 60px;
+  padding-right: 20px;
 }
 /*# sourceMappingURL=styles.css.map */

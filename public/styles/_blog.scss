@@ -1,15 +1,17 @@
-p {
-  font-size: 1.25rem;
-  line-height: 1.6;
-}
+.article {
+  p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+  }
 
-.code-block {
-  background-color: $green1;
-  font-family: Menlo, Monaco, "Courier New", Courier, monospace;
-  padding: 20px;
-}
+  .code-block {
+    background-color: $green1;
+    font-family: Menlo, Monaco, "Courier New", Courier, monospace;
+    padding: 20px;
+  }
 
-img {
-  width: 100%;
-  height: auto;
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
