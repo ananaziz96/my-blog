@@ -30,7 +30,8 @@ p {
 }
 
 img {
-  width: 730px;
+  width: 100%;
+  height: auto;
 }
 
 .big-icon {
