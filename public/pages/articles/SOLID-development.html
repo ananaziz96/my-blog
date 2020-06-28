@@ -13,10 +13,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/8bb78c3084.js"></script>
+    <script src="../../scripts/script.js"></script>
   </head>
   <body>
     <nav id="navbar" class="navbar navbar-expand-sm bg-dark navbar-dark">
-      <a class="navbar-brand" href="#"
+      <a class="navbar-brand" href="../../index.html"
         ><i class="fa fa-rocket green-3 big-icon" aria-hidden="true"></i
       ></a>
 
@@ -48,41 +49,62 @@
 
     <div class="banner jumbotron text-center">
       <h1 id="banner-text">SOLID Development?</h1>
-      <p>Anan Aziz / Dec 26, 2019</p>
+      <p>Anan Aziz / 26 Dec 2019</p>
     </div>
 
     <div class="container">
       <div class="row">
-        <div class="d-none d-sm-block col-sm-1">
+        <div class="d-none d-sm-block col-sm-1 social">
           <div>
-            <button class="icon-button" href="#">
-                <i class="fa fa-heart-o green-3 small-icon" aria-hidden="true"></i >
-                </button>
+            <a class="icon-button" href="javascript:clickLike()">
+              <i
+                class="fa fa-heart-o green-3 small-icon"
+                aria-hidden="true"
+                id="likeButton"
+              ></i>
+            </a>
           </div>
 
           <div>
-              <button class="icon-button" href="#">
-              <i class="fa fa-bookmark-o green-3 small-icon" aria-hidden="true"></i>
-              </button>
+            <a class="icon-button" href="#">
+              <i
+                class="fa fa-bookmark-o green-3 small-icon"
+                aria-hidden="true"
+              ></i>
+            </a>
           </div>
 
           <div>
-              <a class="nav-link" href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">
-                  <i class="fa fa-facebook green-3 small-icon" aria-hidden="true"></i>
-              </a>
+            <a
+              class="nav-link"
+              href="https://www.facebook.com/sharer/sharer.php?u=example.org"
+              style="padding: 0;"
+              target="_blank"
+            >
+              <i
+                class="fa fa-facebook green-3 small-icon"
+                aria-hidden="true"
+              ></i>
+            </a>
           </div>
 
           <div>
-              <button class="icon-button" href="#"></a>
-                  <i class="fa fa-twitter green-3 small-icon" aria-hidden="true"></i
-              ></button>
+            <a href="#">
+              <i class="fa fa-twitter green-3 small-icon" aria-hidden="true"></i
+            ></a>
           </div>
 
           <div>
-              <button class="icon-button" href="#"></a>
-                  <i class="fa fa-linkedin green-3 small-icon" aria-hidden="true"></i
-              ></button>
-          </div>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/shareArticle?mini=true&url=http://developer.linkedin.com&title=LinkedIn%20Developer%20Network&summary=My%20favorite%20developer%20program&source=LinkedIn"
+            >
+              <i
+                class="fa fa-linkedin green-3 small-icon"
+                aria-hidden="true"
+              ></i
+            ></a>
+          </div>   
         </div>
 
         <div class="col-sm-8 article">

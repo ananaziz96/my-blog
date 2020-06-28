@@ -3,7 +3,11 @@
 }
 
 .black {
-  color: black;
+  color: #17252a;
+}
+
+.crimson {
+  color: #dc143c;
 }
 
 .navbar-toggler {
@@ -27,6 +31,8 @@
   background-color: #def2f1;
   font-family: Menlo, Monaco, "Courier New", Courier, monospace;
   padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .article img {
@@ -45,7 +51,19 @@
 .icon-button {
   background-color: #ffff;
   border: none;
-  margin: 10px;
+}
+
+.social i {
+  margin-top: 20px;
+}
+
+.social .icon-button {
+  background-color: #ffff;
+  border: none;
+}
+
+.social a {
+  margin-left: 7px;
 }
 
 .footer {
