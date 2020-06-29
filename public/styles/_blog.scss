@@ -1,0 +1,19 @@
+.article {
+  p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+  }
+
+  .code-block {
+    background-color: $green1;
+    font-family: Menlo, Monaco, "Courier New", Courier, monospace;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

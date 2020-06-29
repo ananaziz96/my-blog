@@ -8,7 +8,18 @@
 
 .icon-button {
   background-color: $white;
-  padding: 0;
   border: none;
-  margin: 10px;
+}
+
+.social {
+  i {
+    margin-top: 20px;
+  }
+  .icon-button {
+    background-color: $white;
+    border: none;
+  }
+  a {
+    margin-left: 7px;
+  }
 }

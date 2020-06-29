@@ -3,11 +3,16 @@ $green1: #def2f1;
 $green2: #3aafa9;
 $green3: #2b7a78;
 $black: #17252a;
+$pink: #fc036f;
 
-.green {
+.green-3 {
   color: $green3;
 }
 
 .black {
-  color: black;
+  color: $black;
+}
+
+.pink {
+  color: $pink;
 }

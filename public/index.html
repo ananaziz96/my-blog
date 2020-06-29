@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Anan Aziz</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/8bb78c3084.js"></script>
+    <script src="./scripts/script.js"></script>
+  </head>
+  <body>
+    <nav id="navbar" class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <a class="navbar-brand" href="index.html"
+        ><i class="fa fa-rocket green-3 big-icon" aria-hidden="true"></i
+      ></a>
+
+      <button
+        class="navbar-toggler green-3"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <i class="fa fa-align-justify green-3" aria-hidden="true"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/articles/SOLID-development.html"
+              >Projects</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://ananaziz96.github.io/cv/"
+              target="_blank"
+              >About</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mailto:anan@rescuefoster.com">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="banner jumbotron text-center">
+      <h1 id="banner-text">Anan Aziz</h1>
+      <p>
+        I started this blog with the goal of sharing a few of the lessons I’ve
+        learned in my career.
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="d-none d-sm-block col-sm-1 social">
+          <div>
+            <a class="icon-button" href="javascript:clickLike()">
+              <i
+                class="fa fa-heart-o green-3 small-icon"
+                aria-hidden="true"
+                id="likeButton"
+              ></i>
+            </a>
+          </div>
+
+          <div>
+            <a class="icon-button" href="javascript:bookmarkAlert()">
+              <i
+                class="fa fa-bookmark-o green-3 small-icon"
+                aria-hidden="true"
+              ></i>
+            </a>
+          </div>
+
+          <div>
+            <a
+              class="nav-link"
+              href="https://www.facebook.com/sharer/sharer.php?u=example.org"
+              style="padding: 0;"
+              target="_blank"
+            >
+              <i
+                class="fa fa-facebook green-3 small-icon"
+                aria-hidden="true"
+              ></i>
+            </a>
+          </div>
+
+          <div>
+            <a target="_blank" href="http://twitter.com/share">
+              <i class="fa fa-twitter green-3 small-icon" aria-hidden="true"></i
+            ></a>
+          </div>
+
+          <div>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/shareArticle?mini=true&url=http://developer.linkedin.com&title=LinkedIn%20Developer%20Network&summary=My%20favorite%20developer%20program&source=LinkedIn"
+            >
+              <i
+                class="fa fa-linkedin green-3 small-icon"
+                aria-hidden="true"
+              ></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="col-sm-8 blog-card">
+          <div class="row">
+            <div class="col-sm-6">
+              <img
+                src="./images/better-developer-using-solid-design.png"
+                alt="becoming a better software developer using solid design by Katerina Trajchevska"
+              />
+            </div>
+            <div class="col-sm-6">
+              <h2>SOLID Development?</h2>
+              <h6>May 23, 2019</h6>
+              <p>
+                I love documenting and sharing things that I learn from talk...
+              </p>
+              <a class="nav-link read-more" href="#">Read more</a>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="row">
+            <div class="col-sm-6">
+              <img
+                src="./images/phoenix-strut-your-mutt-2019.jpeg"
+                alt="becoming a better software developer using solid design by Katerina Trajchevska"
+              />
+            </div>
+            <div class="col-sm-6">
+              <h2>Fostering is a tax dedeuction</h2>
+              <h6>May 23, 2019</h6>
+              <p>
+                I love documenting and sharing things that I learn from talking
+                to other software developers, reading articles, or working for
+                different companies and...
+              </p>
+              <a class="nav-link read-more" href="#">Read more</a>
+            </div>
+          </div>
+
+          <hr />
+        </div>
+
+        <div class="col-sm-3">
+          <table class="trending-now">
+            <tr>
+              <h3 class="green-3">Trending Now</h3>
+            </tr>
+
+            <tr>
+              <td class="green-3 number">1</td>
+              <td>
+                <div><b>Fostering is free!</b></div>
+                <div>
+                  Never depend on anything concrete, only depend on the
+                  abstraction
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="green-3 number">2</td>
+              <td>
+                <div><b>Learn more about your app security</b></div>
+                <div>
+                  Never depend on anything concrete, only depend on the
+                  abstraction
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="green-3 number">3</td>
+              <td>
+                <div><b>How to make money online</b></div>
+                <div>
+                  Never depend on anything concrete, only depend on the
+                  abstraction
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer jumbotron text-center">
+      <p style="color: #ffff;">Made with ❤ and ☕ by Anan Aziz ©</p>
+    </div>
+  </body>
+</html>
