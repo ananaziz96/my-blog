@@ -5,5 +5,5 @@ function clickLike() {
 }
 
 function bookmarkAlert() {
-  alert("Press Ctrl + C to bookmark this page");
+  alert("Press Ctrl + D to bookmark this page");
 }
