@@ -1,5 +1,8 @@
 .footer {
-  background-color: #3aafa9;
+  background-color: $green2;
   margin-top: 50px;
   margin-bottom: 0;
+  p {
+    color: $white;
+  }
 }

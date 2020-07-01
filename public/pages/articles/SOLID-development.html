@@ -97,7 +97,7 @@
           </div>
 
           <div>
-            <a class="icon-button" href="#">
+            <a class="icon-button" href="javascript:bookmarkAlert()">
               <i
                 class="fa fa-bookmark-o green-3 small-icon"
                 aria-hidden="true"
@@ -160,16 +160,27 @@
           </p>
 
           <p>
-              At the time we’re writing code, maybe the design of our classes/methods don’t concern us too much. We don’t care about coupling multiple methods from different classes together as long as it gets the job done. But if we or some other developer has to revisit that same code it quickly becomes a nightmare when adding or removing code in one section is breaking other sections of the application and you’ve no clue what’s causing that. So before we dive deeper into the SOLID principles, let’s briefly talk about why should we even bother with SOLID?
-              To make code more maintainable
-              To make code more reusable
-              To make testing code easy
-              To make it easier to quickly extend the system with new functionality without breaking the existing one
-              To make the code more easier to read and understand , thus spending less time figuring our at it does and more time actually developing the solution
+              At the time we’re writing code, maybe the design of our classes/methods don’t concern us too much. We don’t care about 
+              coupling multiple methods from different classes together as long as it gets the job done. But if we or some other developer 
+              has to revisit that same code it quickly becomes a nightmare when adding or removing code in one section is breaking other 
+              sections of the application and you’ve no clue what’s causing that. So before we dive deeper into the SOLID principles, 
+              let’s briefly talk about why should we even bother with SOLID?
+          </p>
+
+          <p>
+            <ul>
+              <li>To make code more maintainable</li>
+              <li>To make code more reusable</li>
+              <li>To make testing code easy</li>
+              <li>To make it easier to quickly extend the system with new functionality without breaking the existing one</li>
+              <li>To make the code more easier to read and understand , thus spending less time figuring our at it does and more time 
+                actually developing the solution</li>
+            </ul>
           </p>
           
           <p>
-              The SOLID principles were developed by Robert Martin (Uncle Bob) who is best known for being one of the authors of the Agile Manifesto and for developing several software design principles. It is an acronym for the following:
+              The SOLID principles were developed by Robert Martin (Uncle Bob) who is best known for being one of the authors of the 
+              Agile Manifesto and for developing several software design principles. It is an acronym for the following:
               <ul>
                   <li>S — Single Responsibility Principle</li>
                   <li>O — Open/Closed Principle</li>
@@ -182,64 +193,131 @@
           <h2>Single Responsibility Principle</h2>
 
           <p>
-          <em>“A class should have one, and only one reason to change.”</em>
-
+            <em>“A class should have one, and only one reason to change.”</em>
           </p>
 
           <p>
-          Ideally every class should have one specific purpose and thus they should have very specific names. The name of your class should be justified by its specific purpose, making the code easy to parse and understand. Refrain from creating a single large class which serves various purposes and has a generic name.
-          Open/Closed Principle
-          “An entity should be open for extension but closed for modification.”
-          Write code that are simple and can be built upon. You should be able to add functionality by adding new code instead of changing existing code. An example could be open source libraries that you download and write code around it to complement it instead of needing to change the library itself. Your goal is to get to a point where you can never break the core of your system.
-          Liskov Substitution Principle
-          “Let Φ(x) be a property provable about objects x of type T. Then Φ(y) should be true for objects y of type S where S is a subtype of T.”
-          Substitutability is a principle in object-oriented programming stating that, in a computer program, if S is a subtype of T, then objects of type T may be replaced with objects of type S.
-          I found an example online that explains the idea well. Consider this:
-          public class Bird{
-              public void fly(){}
-          }
-          public class Duck extends Bird{}
-          The duck can fly because of it is a bird. But what about this:
-          public class Ostrich extends Bird{}
-          Ostrich is a bird, But it can’t fly, Ostrich class is a subtype of class Bird, But it can’t use the fly method, that means that we are breaking LSP principle.
-          A better implementation of this could be the following:
+            Ideally every class should have one specific purpose and thus they should have very specific names. The name of your class 
+            should be justified by its specific purpose, making the code easy to parse and understand. Refrain from creating a single 
+            large class which serves various purposes and has a generic name.
+          </p>
+
+          <h2>Open/Closed Principle</h2>
+
+          <p>        
+            <em>“An entity should be open for extension but closed for modification.”</em>
+          </p>
+
+          <p>
+            Write code that are simple and can be built upon. You should be able to add functionality by adding new code instead of changing 
+            existing code. An example could be open source libraries that you download and write code around it to complement it instead of 
+            needing to change the library itself. Your goal is to get to a point where you can never break the core of your system.
+          </p>
+
           
-          <div class="code-block">
+          <h2>Liskov Substitution Principle</h2>
+
           <p>
-          public class Bird{}
-          public class FlyingBirds extends Bird{
-              public void fly(){}
-          }
+            <em>“Let Φ(x) be a property provable about objects x of type T. Then Φ(y) should be true for objects y of type S where S 
+              is a subtype of T.”</em>
           </p>
 
           <p>
-          public class Duck extends FlyingBirds{}
-          public class Ostrich extends Bird{}
+            Substitutability is a principle in object-oriented programming stating that, in a computer program, if S is a subtype of T, 
+            then objects of type T may be replaced with objects of type S.
           </p>
+
+          <p>
+            I found an example online that explains the idea well. Consider this:
+          </p>
+
+          <div class="code-block">
+            <p>
+              public class Bird{<br />
+              &nbsp; &nbsp; public void fly(){}<br />
+              }
+            </p>
+
+            <p>
+            public class Duck extends Bird{}
+            </p>
           </div>
 
-          
           <p>
+            The duck can fly because of it is a bird. But what about this:
+          </p>
+
+         
+          <div class="code-block">
+            <p>
+              public class Ostrich extends Bird{}
+            </p>
+          </div>         
+
+          <p>
+            Ostrich is a bird, But it can’t fly, Ostrich class is a subtype of class Bird, But it can’t use the fly method, that 
+            means that we are breaking LSP principle.
+          </p>
+
+          <p>
+            A better implementation of this could be the following:
+          </p>
+          
+          <div class="code-block">
+            <p>
+              public class Bird{}
+            </p>
+
+            <p>
+              public class FlyingBirds extends Bird{<br />
+              &nbsp; &nbsp; public void fly(){}<br />
+              }
+            </p>
+
+            <p>
+              public class Duck extends FlyingBirds{}<br />
+            </p>
+
+            <p>
+              public class Ostrich extends Bird{}<br />
+            </p>
+          </div>
+
           <h2>Integration Segregation Principle</h2>
+
+          <p>
+            <em>“No client should be forced to depend on methods it does not use.”</em>
           </p>
 
           <p>
-          “No client should be forced to depend on methods it does not use.”
-          The Interface Segregation Principle says that your interface should not be bloated with methods that implementing classes don’t require. A client should not depend on anything more than the method it’s using. In an ideal world, if you changed a method in Class A it should not affect Class B. Good practice would be to use small, specific interfaces instead of a single large interface.
+            The Interface Segregation Principle says that your interface should not be bloated with methods that implementing 
+            classes don’t require. A client should not depend on anything more than the method it’s using. In an ideal world, 
+            if you changed a method in Class A it should not affect Class B. Good practice would be to use small, specific interfaces
+            instead of a single large interface.
+          </p>
+
+          <h2>Dependency Inversion Principle</h2>
+          
+          <p>   
+            <em>“High-level modules should not depend on low-level modules. Both should depend on abstractions”</em>
           </p>
 
           <p>
-              <h2>Dependency Inversion Principle</h2>
+            Never depend on anything concrete, only depend on the abstraction. A high-level class in your program shouldn’t depend 
+            directly on a low-level class. An abstraction between them can ensure that the high-level class interacts with the abstraction 
+            and then the abstraction talks to the low-level class. The high-level class should not be concerned or even aware of the details 
+            of the low-level class. Instead we want the low-level class to depend (inversely) on our abstraction. This also allows other 
+            high-level classes to use our abstraction to talk the low-level classes without affecting one another.
           </p>
-          
+
           <p>
-          
-          “High-level modules should not depend on low-level modules. Both should depend on abstractions”
-          Never depend on anything concrete, only depend on the abstraction. A high-level class in your program shouldn’t depend directly on a low-level class. An abstraction between them can ensure that the high-level class interacts with the abstraction and then the abstraction talks to the low-level class. The high-level class should not be concerned or even aware of the details of the low-level class. Instead we want the low-level class to depend (inversely) on our abstraction. This also allows other high-level classes to use our abstraction to talk the low-level classes without affecting one another.
-          To summarize you should also thrive to decouple your code. But having said all that, don’t get too caught up on using SOLID or any other design methodology that maybe unnecessary or an overkill to what you’re trying to achieve. Remember, part of the job is also to find and use the best resources, and discard what you don’t need or use.
+            To summarize you should also thrive to decouple your code. But having said all that, don’t get too caught up on using SOLID 
+            or any other design methodology that maybe unnecessary or an overkill to what you’re trying to achieve. Remember, part of the 
+            job is also to find and use the best resources, and discard what you don’t need or use.
           </p>
+
           <p>
-          <i>Credits- https://www.youtube.com/watch?v=rtmFCcjEgEw</i>
+            <em>Credits- <a href="https://www.youtube.com/watch?v=rtmFCcjEgEw">https://www.youtube.com/watch?v=rtmFCcjEgEw</a></em>
           </p>
         </div>    
 
@@ -300,7 +378,7 @@
     </div>
 
     <div class="footer jumbotron text-center">
-      <p style="color: #ffff;">Made with ❤ and ☕ by Anan Aziz ©</p>
+      <p>Made with  ❤  and  ☕  by Anan Aziz 2020 ©</p>
     </div>
   </body>
 </html>

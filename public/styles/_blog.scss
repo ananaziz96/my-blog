@@ -1,5 +1,6 @@
 .article {
-  p {
+  p,
+  li {
     font-size: 1.25rem;
     line-height: 1.6;
   }
@@ -15,5 +16,11 @@
   img {
     width: 100%;
     height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    margin-top: 30px;
   }
 }

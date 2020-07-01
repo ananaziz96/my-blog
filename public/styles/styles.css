@@ -22,7 +22,8 @@
   color: #2b7a78;
 }
 
-.article p {
+.article p,
+.article li {
   font-size: 1.25rem;
   line-height: 1.6;
 }
@@ -38,6 +39,12 @@
 .article img {
   width: 100%;
   height: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.article h2 {
+  margin-top: 30px;
 }
 
 .big-icon {
@@ -67,13 +74,17 @@
 }
 
 .footer {
-  background-color: #3aafa9;
+  background-color: #00bfa6;
   margin-top: 50px;
   margin-bottom: 0;
 }
 
+.footer p {
+  color: #ffff;
+}
+
 .banner {
-  background-color: #3aafa9;
+  background-color: #00bfa6;
 }
 
 .banner h1,
