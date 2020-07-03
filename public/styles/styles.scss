@@ -6,7 +6,7 @@
 @import "footer";
 
 .banner {
-  background-color: $green2;
+  background-color: $black;
   h1,
   p {
     color: $white;
@@ -28,7 +28,7 @@
 
 .trending-now {
   tr {
-    border-bottom: 1px solid $green3;
+    border-bottom: 1px solid $black;
   }
   .number {
     font-weight: 800;
