@@ -7,3 +7,7 @@ function clickLike() {
 function bookmarkAlert() {
   alert("Press Ctrl + D to bookmark this page");
 }
+
+function scrollTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
