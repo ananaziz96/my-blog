@@ -56,6 +56,13 @@
   border: none;
 }
 
+.heart-icon {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  padding-left: 6px;
+}
+
 .social i {
   margin-top: 20px;
 }
