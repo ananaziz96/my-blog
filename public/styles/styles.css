@@ -6,6 +6,10 @@
   color: #fc036f;
 }
 
+.grey {
+  color: #808080;
+}
+
 .light-grey {
   color: #f2f2f2;
 }
@@ -16,6 +20,8 @@
 
 #navbar {
   background-color: #ffff !important;
+  -webkit-box-shadow: 0px 9px 10px -10px gray;
+          box-shadow: 0px 9px 10px -10px gray;
 }
 
 #navbar .nav-link {
@@ -64,6 +70,12 @@
   padding-left: 5px;
 }
 
+.arrow-icon {
+  border: 1px solid #000000;
+  border-radius: 15px;
+  padding: 4px;
+}
+
 .social i {
   margin-top: 20px;
 }
@@ -101,6 +113,10 @@
 
 .blog-card p {
   font-size: 1em;
+}
+
+.blog-card h6 {
+  color: #808080;
 }
 
 .trending-now tr {
