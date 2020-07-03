@@ -21,16 +21,13 @@
   p {
     font-size: 1em;
   }
-  .read-more {
-    padding: 0;
-  }
 }
 
 .trending-now {
   tr {
     border-bottom: 1px solid $black;
   }
-  .number {
+  .number-padding {
     font-weight: 800;
     font-size: 60px;
     padding-right: 20px;
